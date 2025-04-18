@@ -1,4 +1,4 @@
-# 🧑‍💻 Fullstack User Management App
+# 🧑‍💻 Fullstack User Management Mini App
 
 A fullstack CRUD application with:
 
