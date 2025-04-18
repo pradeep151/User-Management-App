@@ -1,0 +1,80 @@
+.user-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.user-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 20px;
+  text-align: left;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.user-info {
+  margin-bottom: 8px;
+}
+.card-title {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 17px;
+}
+.label {
+  font-size: 13px;
+  color: #666;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.value {
+  font-size: 15px;
+  color: #222;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  gap: 10px;
+}
+
+.card-buttons button {
+  flex: 1;
+  text-transform: none;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .card-buttons {
+    flex-direction: column;
+  }
+}

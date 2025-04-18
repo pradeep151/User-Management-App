@@ -1,0 +1,22 @@
+# Node.js dependencies
+node_modules/
+
+# Build directories
+dist/
+build/
+
+# Log files
+*.log
+*.log.*
+
+# OS-specific files (macOS, Windows, Linux)
+.DS_Store
+Thumbs.db
+
+# Docker-related files
+.docker/
+Dockerfile*
+docker-compose.override.yml
+
+# Ignore Docker volume data (if any)
+/pgdata/
